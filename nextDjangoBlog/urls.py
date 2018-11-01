@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+# from django.views.generic import TempalteView
+from apps.book.views import GetBook
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('book', GetBook.as_view(), name='book')
 ]
