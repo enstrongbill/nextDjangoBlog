@@ -8,32 +8,93 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <style>
+        html{
+            font-size: 62.5%;
+            font-family: 'Noto Sans CJK SC',"PingFang SC","Microsoft YaHei",sans-serif;
+            color: #555;
+
+        }
+        #container{
+            background: #f5f7f9;
+            /* background: yellow; */
+        }
+        #container .progress-bar{
+            height: 3px;
+            background: black;
+        }
+
+        #container header{
+            width: 24rem;
+            background: white;
+            margin-left: 2rem;
+            /* position: relative; */
+            /* border: 1px solid grey; */
+        }
+        header .header-brand-wrap{
+            width: 100%;
+            text-align: center;
+            background: black;
+            color: #fff;
+        }
+        .header-brand-wrap .site-title{
+            /* background: black; */
+            padding-top: 1rem;
+            font-size: 3.2rem;
+            
+
+        }
+        .header-brand-wrap .site-msg{
+            font-size: 1.6rem; 
+            padding: 1.5rem 0;
+        }
+
+        nav{
+            background: #fff;
+            
+        }
+        nav li{
+            font-size: 1.5rem;
+            padding: 1rem;
+            
+        }
+        a{
+            color: black;
+        }
+
+
+
+        #container #content{
+            height: 50rem;
+            background: yellow;
+            float: left;
+            margin-left: 24rem;
+        }
         
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="headband"></div>
-        <header id="header" class="header">
-            <div class="header-inner">
-                <div class="site-brand-wrapper"></div>
-                <div class="site-nav"></div>
-            </div>
-        </header>
-        <main id="main" class="main">
-            <div class="main-inner">
-                <div class="content-wrapper"></div>
-                <aside id="sidebar" class="sidebar">
-                    <div class="sidebar-inner">
-                        <section class="site-overview-wrapper">
-
-                        </section>
-                    </div>
-                </aside>
-            </div>
-        </main>
-        <footer id="footer" class="footer"></footer>
-        <div class="back-to-top"></div>
-    </div>
+   <div id="container">
+       <div class="progress-bar"></div>
+       <header>
+           <div class="header-brand-wrap">
+               
+                   <div class="site-title">三叉树先生的博客</div>
+                   <div class="site-msg">生如夏花,死如秋叶</div>
+               
+           </div>
+           <nav class="header-nav">
+               <ul>
+                   <li><a href="/">首页</a></li>
+                   <li><a href="/archives/">归档</a></li>
+                   <li><a href="/categories/">分类</a></li>
+                   <li><a href="/books/">书籍</a></li>
+                   <li><a href="/plans/">计划</a></li>
+                   <li><a href="/about/">关于我</a></li>
+               </ul>
+           </nav>
+       </header>
+       <div id="content"></div>
+       <aside></aside>
+   </div>
 </body>
 </html>
